@@ -14,11 +14,11 @@ Curso de Node da plataforma Udemy
 
 ![Register User](https://github.com/FelipeFardo/Assets/blob/main/Node-Get-A-Pet/Screenshot_1.png)
 
-- Página Detalhes do Pet
+- Rota Cadastro do Pet
 
 ![Register Pet](https://github.com/FelipeFardo/Assets/blob/main/Node-Get-A-Pet/Screenshot_2.png)
 
-- Página de Minhas adoções
+- Rota de minhas adoções
 
 ![My Adoptions](https://github.com/FelipeFardo/Assets/blob/main/Node-Get-A-Pet/Screenshot_3.png)
 
