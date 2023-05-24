@@ -32,6 +32,7 @@
         "tags": [
           "User"
         ],
+        "summary": "Cadastrar um usuário",
         "description": "",
         "parameters": [
           {
@@ -61,6 +62,7 @@
         "tags": [
           "User"
         ],
+        "summary": "Logar um usuário",
         "description": "",
         "parameters": [
           {
@@ -84,6 +86,7 @@
         "tags": [
           "User"
         ],
+        "summary": "Checar a permissão usuário",
         "description": "",
         "parameters": [
           {
@@ -107,6 +110,7 @@
         "tags": [
           "User"
         ],
+        "summary": "Pesquisar por um usuário em específico",
         "description": "",
         "parameters": [
           {
@@ -131,6 +135,7 @@
         "tags": [
           "User"
         ],
+        "summary": "Editar um usuário",
         "description": "",
         "parameters": [
           {
@@ -174,6 +179,7 @@
         "tags": [
           "Pet"
         ],
+        "summary": "Cadastrar o Pet",
         "description": "",
         "parameters": [
           {
@@ -211,6 +217,7 @@
         "tags": [
           "Pet"
         ],
+        "summary": "Pesquisar por todos Pets",
         "description": "",
         "parameters": [],
         "responses": {
@@ -228,6 +235,7 @@
         "tags": [
           "Pet"
         ],
+        "summary": "Pesquisar por todos Pets cadastrados pelo usuário",
         "description": "",
         "parameters": [
           {
@@ -254,6 +262,7 @@
         "tags": [
           "Pet"
         ],
+        "summary": "Pesquisar por todos Pets adotados pelo usuário",
         "description": "",
         "parameters": [
           {
@@ -280,6 +289,7 @@
         "tags": [
           "Pet"
         ],
+        "summary": "Pesquisar por um Pet em específico",
         "description": "",
         "parameters": [
           {
@@ -305,6 +315,7 @@
         "tags": [
           "Pet"
         ],
+        "summary": "Deletar um Pet",
         "description": "",
         "parameters": [
           {
@@ -338,6 +349,7 @@
         "tags": [
           "Pet"
         ],
+        "summary": "Atualizar um Pet em específico",
         "description": "",
         "parameters": [
           {
@@ -384,6 +396,7 @@
         "tags": [
           "Pet"
         ],
+        "summary": "Agendar uma visita com o Pet",
         "description": "",
         "parameters": [
           {
@@ -422,6 +435,7 @@
         "tags": [
           "Pet"
         ],
+        "summary": "Conclui a adoção de um Pet",
         "description": "",
         "parameters": [
           {

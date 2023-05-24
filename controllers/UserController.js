@@ -11,7 +11,7 @@ module.exports = class UserController {
   // #swagger.start
   static async register(req, res) {
     // #swagger.tags = ['User']
-
+    // #swagger.summary = 'Cadastrar um usuário'
     /* #swagger.parameters['obj'] = { 
       in: 'body',
       description: 'Informações do usuário',
@@ -53,6 +53,7 @@ module.exports = class UserController {
 
   static async login(req, res) {
     // #swagger.tags = ['User']
+    // #swagger.summary = 'Logar um usuário'
     /* #swagger.parameters['obj'] = { 
       in: 'body',
       description: 'Informações de login usuário',
@@ -85,6 +86,7 @@ module.exports = class UserController {
 
   static async checkUser(req, res) {
     // #swagger.tags = ['User']
+    // #swagger.summary = 'Checar a permissão usuário'
     let currentUser;
 
     try {
@@ -107,6 +109,7 @@ module.exports = class UserController {
   s;
   static async getUserById(req, res) {
     // #swagger.tags = ['User']
+    // #swagger.summary = 'Pesquisar por um usuário em específico'
     const id = req.params.id;
 
     const user = await User.findById(id).select("-password");
@@ -124,6 +127,7 @@ module.exports = class UserController {
 
   static async editUser(req, res) {
     // #swagger.tags = ['User']
+    // #swagger.summary = 'Editar um usuário'
     /* #swagger.parameters['obj'] = { 
       in: 'body',
       description: 'Informações para alteração dos dados do usuário',

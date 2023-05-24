@@ -9,6 +9,7 @@ module.exports = class PetController {
   // #swagger.start
   static async create(req, res) {
     // #swagger.tags = ['Pet']
+    // #swagger.summary = 'Cadastrar o Pet'
     /* #swagger.parameters['obj'] = { 
       in: 'body',
       description: 'Informações de login usuário',
@@ -54,6 +55,7 @@ module.exports = class PetController {
 
   static async getAll(req, res) {
     // #swagger.tags = ['Pet']
+    // #swagger.summary = 'Pesquisar por todos Pets'
     try {
       const pets = await Pet.find().sort("-createdAt");
       res.status(200).json({ pets });
@@ -64,6 +66,7 @@ module.exports = class PetController {
 
   static async getAllUserPets(req, res) {
     // #swagger.tags = ['Pet']
+    // #swagger.summary = 'Pesquisar por todos Pets cadastrados pelo usuário'
 
     const token = getToken(req);
     const user = await getUserByToken(token);
@@ -81,7 +84,7 @@ module.exports = class PetController {
 
   static async getAllUserAdoptions(req, res) {
     // #swagger.tags = ['Pet']
-
+    // #swagger.summary = 'Pesquisar por todos Pets adotados pelo usuário'
     // get user from token
     const token = getToken(req);
     const user = await getUserByToken(token);
@@ -97,7 +100,7 @@ module.exports = class PetController {
 
   static async getPetById(req, res) {
     // #swagger.tags = ['Pet']
-
+    // #swagger.summary = 'Pesquisar por um Pet em específico'
     const id = req.params.id;
 
     if (!ObjectId.isValid(id)) {
@@ -119,7 +122,7 @@ module.exports = class PetController {
 
   static async removePetById(req, res) {
     // #swagger.tags = ['Pet']
-
+    // #swagger.summary = 'Deletar um Pet'
     const id = req.params.id;
 
     if (!ObjectId.isValid(id)) {
@@ -153,6 +156,7 @@ module.exports = class PetController {
 
   static async updatePet(req, res) {
     // #swagger.tags = ['Pet']
+    // #swagger.summary = 'Atualizar um Pet em específico'
     /* #swagger.parameters['obj'] = { 
       in: 'body',
       description: 'Informações de login usuário',
@@ -223,7 +227,7 @@ module.exports = class PetController {
 
   static async schedule(req, res) {
     // #swagger.tags = ['Pet']
-
+    // #swagger.summary = 'Agendar uma visita com o Pet'
     const id = req.params.id;
 
     // check if pet exists
@@ -285,7 +289,7 @@ module.exports = class PetController {
 
   static async concludeAdoption(req, res) {
     // #swagger.tags = ['Pet']
-
+    // #swagger.summary = 'Conclui a adoção de um Pet'
     const id = req.params.id;
 
     // check if pet exists
